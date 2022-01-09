@@ -48,7 +48,7 @@ function ignoreFavicon(req, res, next) {
 app.use(ignoreFavicon);  
 
 app.get("/", (req, res) => {
-    res.send("Welcome to coding competition");
+    res.send("Welcome to coding competition created by Athira AS");
 });
 
 app.get("/home", (req, res) => {
@@ -70,7 +70,7 @@ app.post("/mailer", (req, res) => {
     console.log(process.env.EMAIL_ID);
       
     var mailOptions = {
-        from: process.env.EMAIL_ID,
+        from: '"Isabel" <tt0607773@gmail.com>',
         to:email,
         subject: 'Sending Email using Node.js',
         text: 'Hello using Node.js!'
