@@ -48,7 +48,7 @@ function ignoreFavicon(req, res, next) {
 app.use(ignoreFavicon);  
 
 app.get("/", (req, res) => {
-    res.send("Welcome to coding competition created by Athira AS");
+    res.send("Welcome to coding competition #2 by AThira, Norka B3");
 });
 
 app.get("/home", (req, res) => {
